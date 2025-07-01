@@ -1,0 +1,8 @@
+langchain
+transformers
+torch
+chromadb
+streamlit
+openai
+sentence-transformers
+pytest
