@@ -33,7 +33,20 @@ def test_generate_embedding():
     assert isinstance(embedding, list)
     assert len(embedding) > 0
 
+from agents.qa_agent import QAAgent
+
+def test_qa_agent():
+    agent = QAAgent()
+    input_text = " ".join(["AI agents can perform summarisation, question answering, and reasoning tasks."] * 20)
+    agent.ingest_and_index(input_text)
+    answer = agent.answer_query("What tasks can AI agents perform?")
+    assert isinstance(answer, str)
+    assert len(answer) > 0
+
+
+
 if __name__ == "__main__":
     test_summariser_agent()
     test_generate_embedding()
+    test_qa_agent()
     print("All tests passed.")
