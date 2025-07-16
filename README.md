@@ -48,7 +48,7 @@ This project demonstrates a **Retrieval-Augmented Generation (RAG) pipeline** wi
 ## 📁 **Project Structure**
 
 
-
+```bash
 research\_analyst\_agent/
 ├── agents/
 │   ├── orchestrator\_agent.py
@@ -68,7 +68,7 @@ research\_analyst\_agent/
 ├── Dockerfile
 ├── docker-compose.yml
 └── README.md
-
+````
 
 
 
