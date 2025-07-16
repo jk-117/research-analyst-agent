@@ -1,8 +1,6 @@
-Here is your **professional README.md** for the **Autonomous Research Analyst Agent** GitHub repository, structured to impress recruiters and interviewers:
 
----
 
-```markdown
+
 # 🧠 Autonomous Research Analyst Agent
 
 A **multi-agent AI system** capable of autonomous web search, summarisation, Q&A, and critique to accelerate research and knowledge synthesis.
@@ -45,11 +43,11 @@ This project demonstrates a **Retrieval-Augmented Generation (RAG) pipeline** wi
 - **GitHub Actions**
 - **Pytest**
 
----
+
 
 ## 📁 **Project Structure**
 
-```
+
 
 research\_analyst\_agent/
 ├── agents/
@@ -71,9 +69,9 @@ research\_analyst\_agent/
 ├── docker-compose.yml
 └── README.md
 
-````
 
----
+
+
 
 ## ⚡ **Quick Start**
 
@@ -140,26 +138,11 @@ docker-compose up
 ## ✨ **Author**
 
 **Jaisimha Kothari**
-Aspiring MAANG AI Engineer | Passionate about scalable, real-world AI solutions.
+AI Engineer | Passionate about scalable, real-world AI solutions.
 
 [LinkedIn](https://www.linkedin.com/in/your-profile) • [GitHub](https://github.com/yourusername)
 
----
-
-## 📝 **License**
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 > ⚡ **“Empowering research through autonomous, intelligent agents.”**
 
-```
 
----
-
-### ✅ **Action**
-
-- Replace `yourusername` and LinkedIn URLs with your actual profiles before uploading.  
-- Let me know if you want **badges** (build, license, stars) or a **short project tagline** for your pinned GitHub repos and LinkedIn showcase tomorrow.
-```
