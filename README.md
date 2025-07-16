@@ -121,8 +121,14 @@ docker build -t research_analyst_agent .
 2. **Run the container**
 
 ```bash
-docker-compose up
+docker run -it -p 8501:8501 research_analyst_agent
 ```
+2. **Open the Link**
+
+```bash
+https:/localhost:8501/ or https:/127.0.0.1:8501/
+```
+
 
 ---
 
@@ -140,7 +146,7 @@ docker-compose up
 **Jaisimha Kothari**
 AI Engineer | Passionate about scalable, real-world AI solutions.
 
-[LinkedIn](https://www.linkedin.com/in/your-profile) • [GitHub](https://github.com/yourusername)
+[LinkedIn]((https://www.linkedin.com/in/jaisimha-kothari/)) • [GitHub]((https://github.com/jk-117))
 
 
 > ⚡ **“Empowering research through autonomous, intelligent agents.”**
