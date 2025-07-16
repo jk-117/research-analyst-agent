@@ -36,12 +36,23 @@ def test_generate_embedding():
 from agents.qa_agent import QAAgent
 
 def test_qa_agent():
+    from agents.qa_agent import QAAgent
     agent = QAAgent()
-    input_text = " ".join(["AI agents can perform summarisation, question answering, and reasoning tasks."] * 20)
-    agent.ingest_and_index(input_text)
-    answer = agent.answer_query("What tasks can AI agents perform?")
+    
+    # Define test context and query
+    test_context = (
+        "AI agents can perform various tasks such as language translation, "
+        "image recognition, and decision making based on data analysis."
+    )
+    test_query = "What tasks can AI agents perform?"
+    
+    # Call QA agent with context and query
+    answer = agent.answer_query(test_context, test_query)
+    
+    print("QA Test Answer:", answer)
     assert isinstance(answer, str)
     assert len(answer) > 0
+
 
 
 

@@ -3,10 +3,10 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from models.embeddings import chunk_text, add_to_vector_store, query_vector_store
-
+from transformers import pipeline
 class QAAgent:
     def __init__(self):
-        pass  # placeholder for future configurations
+        self.qa_pipeline = pipeline("question-answering", model="distilbert-base-uncased-distilled-squad")
 
     def ingest_and_index(self, text):
         """
@@ -15,17 +15,20 @@ class QAAgent:
         chunks = chunk_text(text)
         add_to_vector_store(chunks)
 
-    def answer_query(self, query):
+
+
+    
+    
+    def answer_query(self, context, query):
         """
-        Retrieves relevant text chunks for the query.
+        Answers query based on given context using QA model.
         """
-        results = query_vector_store(query, top_k=3)
-        combined = " ".join(results)
-        return combined  # for now returns retrieved text, later integrate summarisation
+        result = self.qa_pipeline(question=query, context=context)
+        return result['answer']
 
 if __name__ == "__main__":
     agent = QAAgent()
-    sample_text = " ".join(["This is a sample sentence about AI agents and summarisation."] * 50)
-    agent.ingest_and_index(sample_text)
-    response = agent.answer_query("What is summarisation?")
-    print("Retrieved Context:\n", response)
+    sample_context = "This is a sample sentence about AI agents and summarisation."
+    sample_query = "What is summarisation?"
+    response = agent.answer_query(sample_context, sample_query)
+    print("Answer:\n", response)
