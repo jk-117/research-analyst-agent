@@ -3,7 +3,7 @@
 
 # 🧠 Autonomous Research Analyst Agent
 
-A **multi-agent AI system** capable of autonomous web search, summarisation, Q&A, and critique to accelerate research and knowledge synthesis.
+A **multi-agent AI system** capable of summarisation, Q&A, and critique to accelerate research and knowledge synthesis.
 
 ---
 
